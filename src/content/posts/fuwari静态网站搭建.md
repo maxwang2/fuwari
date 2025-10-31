@@ -15,13 +15,13 @@ lang: ""
 
 1. 一个牛逼的脑子，支持并行运算至少两个单位以上的事件，学会和 ai 调情
 
-2. <a href="https://git-scm.com/downloads" target="_blank" rel="noopener noreferrer">Git - Downloads (git-scm.com)</a>：最牛逼的版本控制器
+2. <a href="https://git-scm.com/downloads" target="_blank" rel="noopener noreferrer">Git</a>：最牛逼的版本控制器
 
-3. <a href="https://nodejs.org/en" target="_blank" rel="noopener noreferrer">Node.js — Run JavaScript Everywhere (nodejs.org)</a>：伟大无需多言
+3. <a href="https://nodejs.org/en" target="_blank" rel="noopener noreferrer">Node.js</a>：伟大无需多言
 
 4. 一个 <a href="https://github.com/" target="_blank" rel="noopener noreferrer">Github</a> 账号：用于创建一个代码仓库存放Fuwari文件
 
-5. 一个<a href="https://cloudflare.com" target="_blank" rel="noopener noreferrer">Cloudflare</a> 账号：用作托管
+5. 一个 <a href="https://cloudflare.com" target="_blank" rel="noopener noreferrer">Cloudflare</a> 账号：用作托管
 
 6. <a href="https://obsidian.md/" target="_blank" rel="noopener noreferrer">Obsidian</a>：一个 md 编辑器
 
