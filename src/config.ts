@@ -62,17 +62,17 @@ export const profileConfig: ProfileConfig = {
 			icon: "fa6-brands:twitter", // Visit https://icones.js.org/ for icon codes
 			// You will need to install the corresponding icon set if it's not already included
 			// `pnpm add @iconify-json/<icon-set-name>`
-			url: "https://twitter.com",
+			url: "https://x.com/maxyueyue_V",
 		},
 		{
 			name: "Steam",
 			icon: "fa6-brands:steam",
-			url: "https://store.steampowered.com",
+			url: "https://steamcommunity.com/profiles/76561199878102865/",
 		},
 		{
 			name: "GitHub",
 			icon: "fa6-brands:github",
-			url: "https://github.com/saicaca/fuwari",
+			url: "https://github.com/maxwang2",
 		},
 	],
 };
