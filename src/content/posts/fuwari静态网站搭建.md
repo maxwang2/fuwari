@@ -63,17 +63,18 @@ categories: ''
 draft: false
 lang: ''
 ```
-
+:::note[说明]
 - title：标题
 - published：发布时间
 - description：文章描述，正常会显示在文章标题下面
 - image：文章封面图
 - tag：文章标签
 - categories：文章分类
+:::
 
-4. 编写好你的文章
+1. 编写好你的文章
 
-5. 更改根目录下的 `astro.config.mjs`，在第34行更改 `site:` 为你的站点URL
+2. 更改根目录下的 `astro.config.mjs`，在第34行更改 `site:` 为你的站点URL
 
 至此，你已经会用 Obsidian 编写 MarkDown 语法的博客了
 
@@ -99,6 +100,6 @@ lang: ''
 
 ![alt text](./attachments/1.png)
 
-1. 绑定自定义域，访问自定义域即可访问你的博客！（买域名的话推荐**雨云**或者**阿里云**）
+3. 绑定自定义域，访问自定义域即可访问你的博客！（买域名的话推荐**雨云**或者**阿里云**）
 
-2. 最后，你只需要在本地编写文章，然后使用 Git 将更改推送到远程仓库，Cloudflare 就会自动部署，更新你的博客啦！
+4. 最后，你只需要在本地编写文章，然后使用 Git 将更改推送到远程仓库，Cloudflare 就会自动部署，更新你的博客啦！
