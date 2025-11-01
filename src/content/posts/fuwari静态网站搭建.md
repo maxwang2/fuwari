@@ -3,15 +3,13 @@ title: fuwari静态网站搭建
 published: 2025-10-31
 description: 基于cf进行托管的静态fuwari搭建教学
 image: "https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/208fc754-890d-4adb-9753-2c963332675d/width=2048/01651-1456859105-(colour_1.5),girl,_Blue,yellow,green,cyan,purple,red,pink,_best,8k,UHD,masterpiece,male%20focus,%201boy,gloves,%20ponytail,%20long%20hair,.jpeg"
-tags:
-  - Blogging
-  - Fuwari
+tags: [Fuwari]
 category: Tutorial
 draft: false
 lang: ""
 ---
 
-### 你需要准备的东西
+## 你需要准备的东西
 
 1. 一个牛逼的脑子，支持并能运算至少两个单位以上的事件，会和 ai 调情
 
@@ -25,13 +23,13 @@ lang: ""
 
 6. <a href="https://obsidian.md/" target="_blank" rel="noopener noreferrer">Obsidian</a>：一个 md 编辑器
 
-### 流程图
+## 流程图
 
 本地部署 Fuwari，编写文章 -> 推送更改到远程 Github 仓库 -> Cloudflare Pages 检测到仓库更新自动构建新的网站静态文件 -> 网站成功更改
 
-### 让我们开搞吧！
+## 让我们开搞吧！
 
-#### 1.1 本地部署Fuwari
+### 1.1 本地部署Fuwari
 
 1. Fork 仓库：<a href="https://github.com/saicaca/fuwari" target="_blank" rel="noopener noreferrer">Fuwari 仓库</a>（如果登不上去就挂梯子）
 
@@ -43,7 +41,7 @@ lang: ""
 
 至此，你成功在本地部署了Fuwari
 
-#### 1.2 本地编写文章
+### 1.2 本地编写文章
 
 > 强烈推荐 obsidian 编辑器
 
@@ -78,7 +76,7 @@ lang: ''
 
 至此，你已经会用 Obsidian 编写 MarkDown 语法的博客了
 
-#### 2.1 发布到 Github 上
+### 2.1 发布到 Github 上
 
 1. 先来预览一下我们的博客：到项目根目录执行 `pnpm dev`，在浏览器中打开输出的链接
 
@@ -92,7 +90,7 @@ lang: ''
 
 3. 此时，你的 Github 仓库应该已经有了新的提交
 
-#### 2.2 让 Cloudflare 连接上 Github，使用 Pages 服务展示你的博客
+### 2.2 让 Cloudflare 连接上 Github，使用 Pages 服务展示你的博客
 
 1. 前往 Cloudflare 的 "**Workers 和 Pages**" 页面，创建一个新 "Pages"
 
