@@ -1,3 +1,18 @@
+/* 引入 Tailwind 工具类模块（必须添加，否则 @layer utilities 无效） */
+@tailwind utilities;
+
+/* 定义自定义工具类 */
+@layer utilities {
+  .btn-regular-dark {
+    @apply bg-[var(--btn-regular-bg)] 
+           text-[var(--btn-regular-text)] 
+           hover:bg-[var(--btn-regular-bg-hover)] 
+           active:bg-[var(--btn-regular-bg-active)] 
+           transition-colors 
+           duration-200;
+  }
+}
+
 .custom-md {
     h1 {
         @apply text-3xl;
