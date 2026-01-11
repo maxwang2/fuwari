@@ -11,6 +11,47 @@
            transition-colors 
            duration-200;
   }
+
+  /* 修复 hover 压扁问题的徽章基础类 */
+  .badge-starlight {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-md font-medium text-white
+           shadow-sm transition-all duration-200 hover:scale-105 hover:shadow-md;
+    transform-origin: center center; /* 核心：缩放从中心开始，避免文字偏移/压扁 */
+    line-height: 1; /* 固定行高，防止缩放时文字挤压 */
+  }
+
+  /* 新增：仿 Starlight 徽章核心样式（完全匹配官网效果） */
+  /* 基础徽章类 - 控制布局、圆角、动效、文字样式 */
+  .badge-starlight {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-md font-medium text-white
+           shadow-sm transition-all duration-200 hover:scale-105 hover:shadow-md;
+  }
+  /* Astro 蓝紫渐变（Starlight 官网同款） */
+  .badge-starlight-astro {
+    @apply badge-starlight bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-700 dark:to-purple-700;
+  }
+  /* 纯紫渐变（贡献者徽章样式） */
+  .badge-starlight-purple {
+    @apply badge-starlight bg-gradient-to-r from-purple-700 to-purple-900 dark:from-purple-800 dark:to-purple-950;
+  }
+  /* 绿渐变（成功状态） */
+  .badge-starlight-green {
+    @apply badge-starlight bg-gradient-to-r from-emerald-600 to-green-600 dark:from-emerald-700 dark:to-green-700;
+  }
+  /* 橙渐变（警告状态） */
+  .badge-starlight-orange {
+    @apply badge-starlight bg-gradient-to-r from-orange-500 to-amber-600 dark:from-orange-600 dark:to-amber-700;
+  }
+  /* 图标对齐类 - 保证徽章内图标和文字垂直居中 */
+  .badge-starlight-icon {
+    @apply w-4 h-4 inline-block align-middle;
+  }
+  /* 修复后的小号徽章（调整内边距/行高） */
+  .badge-starlight-sm {
+    @apply px-2 py-0.5 text-xs tracking-wider uppercase;
+    line-height: 1.1; /* 适配小号文字行高，避免压扁 */
+    gap: 1; /* 缩小图标和文字间距，适配小号尺寸 */
+  }
 }
 
 .custom-md {
@@ -129,5 +170,15 @@
             @apply content-none;
         }
 
+    }
+
+    /* 新增：Markdown 纯文本高光（==文字==）样式（适配 Fuwari 主题） */
+    mark {
+        @apply bg-[#fce7f3] text-[#be185d] px-[0.25rem] py-[0.1rem] rounded-md font-medium;
+    }
+
+    /* 深色模式下的高光样式 */
+    .dark & mark {
+        @apply bg-[#4a1d3a] text-[#fecdd3];
     }
 }

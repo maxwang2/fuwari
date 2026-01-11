@@ -15,6 +15,7 @@ import remarkDirective from "remark-directive"; /* Handle directives */
 import remarkGithubAdmonitionsToDirectives from "remark-github-admonitions-to-directives";
 import remarkMath from "remark-math";
 import remarkSectionize from "remark-sectionize";
+import remarkGfm from "remark-gfm"; // 新增：导入GFM插件（纯文本高光核心）
 import { expressiveCodeConfig } from "./src/config.ts";
 import { pluginLanguageBadge } from "./src/plugins/expressive-code/language-badge.ts";
 import { AdmonitionComponent } from "./src/plugins/rehype-component-admonition.mjs";
@@ -104,6 +105,7 @@ export default defineConfig({
 	],
 	markdown: {
 		remarkPlugins: [
+			remarkGfm, // 新增：启用GFM插件（支持==纯文本高光==语法）
 			remarkMath,
 			remarkReadingTime,
 			remarkExcerpt,
